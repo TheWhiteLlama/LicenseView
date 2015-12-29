@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.7.+'
+        classpath 'com.android.tools.build:gradle:1.5.0'
     }
 }
 
@@ -24,7 +24,7 @@ allprojects {
 apply plugin: 'android-library'
 android {
 	compileSdkVersion 16
-	buildToolsVersion "18.1.1"
+	buildToolsVersion "23.0.2"
 
     sourceSets {
         main {
@@ -34,6 +34,3 @@ android {
         }
     }
 }
-
-
-apply from: 'maven_push.gradle'
